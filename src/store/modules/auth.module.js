@@ -26,7 +26,8 @@ export default {
                 const {data} = await axios.post(url, {...payload, returnSecureToken: true})
                 commit('setToken', data.idToken)
             } catch (e) {
-                console.log(error(e.responce.data.error.message))
+                console.log(error(e.response.data.error.message))
+                
             }
         }
     },
