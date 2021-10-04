@@ -1,20 +1,22 @@
 <template>
-    <the-nav-bar></the-nav-bar>
-    <div class="container with-nav">
-        <app-message></app-message>
-        <router-view />
-    </div>
+  <the-navbar />
+  <the-sidebar />
+  <div class="container with-nav">
+    <app-message />
+    <router-view />
+  </div>
 </template>
 
 <script>
-import TheNavBar from '../components/TheNavBar.vue'
-import AppMessage from '../components/ui/AppMessage.vue'
+import TheNavbar from '../components/TheNavbar'
+import TheSidebar from '../components/TheSidebar'
+import AppMessage from '../components/ui/AppMessage'
 
 export default {
-    components: {
-        TheNavBar,
-        AppMessage
-    }
+  components: {TheNavbar, AppMessage, TheSidebar}
 }
 </script>
 
+<style scoped>
+
+</style>
